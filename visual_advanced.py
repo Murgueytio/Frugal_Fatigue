@@ -89,3 +89,86 @@ plt.colorbar(scatter, label='Frugal Fatigue', pad=0.1)
 plt.title(f'3D Relationship between the Most Important Variables', fontsize=16)
     
 plt.show()
+
+def visualizations_interpretation(model, X_train, X_test, y_train, y_test, variables, save_path=None):
+    """
+    Visualizations that help interpret the frugal fatigue model.
+    """
+    # Standardized coefficients
+    if hasattr(model, 'params'):
+        # Statsmodels Model
+        coefs = model.params[1:] # Exclude constant
+        std_coefs = coefs * X_train.std()[coefs.index]
+        importances = pd.Series(std_coefs.abs(), index=coefs.index).sort_values(ascending=False)
+        
+        plt.figure(figsize=(12, 8))
+        importances.head(15).plot(kind='barh', color='skyblue')
+        plt.title('Importance of Variables (Standardized Coefficients)', fontsize=16)
+        plt.xlabel('Importance')
+        plt.tight_layout()
+        if save_path:
+            plt.savefig(f"{save_path}/Importance Variables.png", bbox_inches='tight')
+        plt.close()
+    else:
+        # Scikit-learn Model with feature importances
+        if hasattr(model, 'feature_importances_'):
+            importances = pd.Series(model.feature_importances_, index=variables).sort_values(ascending=False)
+            
+            plt.figure(figsize=(12, 8))
+            importances.plot(kind='barh', color='skyblue')
+            plt.title('Importance Variables', fontsize=16)
+            plt.xlabel('Importance')
+            plt.tight_layout()
+            if save_path:
+                plt.savefig(f"{save_path}/Importance Variables.png", bbox_inches='tight')
+            plt.close()
+        else:
+        # Permutation 
+            result = permutation_importance(model, X_test, y_test, n_repeats=10, random_state=42)
+            importances = pd.Series(result.importances_mean, index=variables).sort_values(ascending=False)
+            
+            plt.figure(figsize=(12, 8))
+            importances.plot(kind='barh', color='skyblue')
+            plt.title('Importance of Variables (Permutation Importance)', fontsize=16)
+            plt.xlabel('Importance')
+            plt.tight_layout()
+            if save_path:
+                plt.savefig(f"{save_path}/Importance Variables.png", bbox_inches='tight')
+            plt.close()
+    
+    # Model Residuals
+    if hasattr(model, 'predict'):
+        y_pred = model.predict(X_test)
+        residuals = y_test - y_pred
+        
+        plt.figure(figsize=(12, 8))
+        plt.scatter(y_pred, residuals, alpha=0.5)
+        plt.axhline(y=0, color='r', linestyle='-')
+        plt.title('Residuals vs Predicted Values', fontsize=16)
+        plt.xlabel('Predicted Values')
+        plt.ylabel('Residuals')
+        if save_path:
+            plt.savefig(f"{save_path}/Residuals vs Predicted Values.png", bbox_inches='tight')
+        plt.close()
+        
+        # QQ-Plot Residuals
+        plt.figure(figsize=(12, 8))
+        sm.qqplot(residuals, line='45', fit=True)
+        plt.title('QQ-Plot Residuals', fontsize=16)
+        plt.tight_layout()
+        if save_path:
+            plt.savefig(f"{save_path}/QQ-Plot Residuals.png", bbox_inches='tight')
+        plt.close()
+        
+        # Histogram of Residuals
+        plt.figure(figsize=(12, 8))
+        sns.histplot(residuals, kde=True, bins=30)
+        plt.axvline(x=0, color='r', linestyle='--')
+        plt.title('Residuals Distribution', fontsize=16)
+        plt.xlabel('Residuals')
+        plt.ylabel('Frecuencia')
+        if save_path:
+            plt.savefig(f"{save_path}/Histogram of Residuals.png", bbox_inches='tight')
+        plt.close()
+    
+    return importances
