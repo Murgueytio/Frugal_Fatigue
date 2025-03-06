@@ -65,7 +65,7 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/fdab3abe-56e0-4e55-9ca5-7e4c92a8b1d6)
 
-
+**7.2. Interpretation of the Model
 
 
 
