@@ -27,7 +27,7 @@ gam_model.fit(X_fatigue_train.drop(columns=['const']), y_fatigue_train)  # Remov
 
 # Visualization of partial effects
 plt.figure(figsize=(12, 8))
-titles = ['Changes Expense', 'Job Search', 'Cchanges Consumption', 'Household Income', 'Net Debt']
+titles = ['Changes Expense', 'Job Search', 'Changes Consumption', 'Household Income', 'Net Debt']
 
 for i, term in enumerate(gam_model.terms):
     if term.isintercept:
