@@ -9,3 +9,7 @@ We simulate data to illustrate the model
 
 **3. EVALUATION AND PREDICTION**
 
+**4. EARLY WARNING SYSTEM**
+
+
+
