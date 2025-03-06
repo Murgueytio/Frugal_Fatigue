@@ -4,3 +4,6 @@ I propose a simultaneous equations econometric model that captures the multidime
 **1. DATA SIMULATION**
 
 We simulate data to illustrate the model
+
+**2. ESTIMATION OF THE MODELS**
+
