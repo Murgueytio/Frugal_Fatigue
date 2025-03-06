@@ -61,8 +61,6 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/66002d42-2f25-4cb8-9b9d-77d5bb9e7590)
 
-![image](https://github.com/user-attachments/assets/9b91c96a-8c60-4dd3-9d29-0354cd2a9ecb)
-
 ![image](https://github.com/user-attachments/assets/b573fd9e-5022-44d5-b55e-4fadc290237b)
 
 ![image](https://github.com/user-attachments/assets/fdab3abe-56e0-4e55-9ca5-7e4c92a8b1d6)
