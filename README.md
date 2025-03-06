@@ -15,3 +15,13 @@ We simulate data to illustrate the model
 
 **5. NONLINEAR COMPLEXITY AND INTERPRETABILITY**
 
+**5.1. Transformaciones No Lineales con Diagnóstico Visual**
+
+Implementación
+
+**5.2 Generalized Additive Models (GAM)**
+
+Implementation with interpretation
+
+![image](https://github.com/user-attachments/assets/fd03d8dd-b88c-4273-96dd-231cdb7dae34)
+
