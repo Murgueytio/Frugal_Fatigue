@@ -7,3 +7,5 @@ We simulate data to illustrate the model
 
 **2. ESTIMATION OF THE MODELS**
 
+**3. EVALUATION AND PREDICTION**
+
