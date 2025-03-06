@@ -45,6 +45,19 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/a87a0d09-e767-4800-94e4-3a07b53af387)
 
+**6.3. IMPROVED ALERT SYSTEM**
+
+![image](https://github.com/user-attachments/assets/e3466e2e-afe2-4531-8252-d672007883fe)
+
+**6.4. VISUALIZATION OF RESULTS FOR INTERPRETATION**
+
+![image](https://github.com/user-attachments/assets/691edfb2-1154-4631-8e90-47ac72731af2)
+
+![image](https://github.com/user-attachments/assets/e6eb2e8a-a251-4c6b-a5fb-dc245ea74c30)
+
+
+
+
 
 
 
