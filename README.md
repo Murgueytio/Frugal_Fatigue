@@ -13,3 +13,5 @@ We simulate data to illustrate the model
 
 ![image](https://github.com/user-attachments/assets/da2d0123-1fcc-41a5-baaf-a6629837c689)
 
+**5. NONLINEAR COMPLEXITY AND INTERPRETABILITY**
+
