@@ -43,7 +43,8 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/c281efe1-bedd-4d31-80ae-f1121432c700)
 
-![image](https://github.com/user-attachments/assets/a3e56a27-851f-4126-a9fc-80f155865d2a)
+![image](https://github.com/user-attachments/assets/a87a0d09-e767-4800-94e4-3a07b53af387)
+
 
 
 
