@@ -39,6 +39,11 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/52f4c186-d16a-41a6-801c-816b0aa8ab96)
 
+**6.2. IMPROVED MODELING PHASE**
+
+![image](https://github.com/user-attachments/assets/c281efe1-bedd-4d31-80ae-f1121432c700)
+
+![image](https://github.com/user-attachments/assets/a3e56a27-851f-4126-a9fc-80f155865d2a)
 
 
 
