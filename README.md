@@ -29,7 +29,7 @@ Implementation with interpretation
 
 **6. HYBRIDIZATION INDEX FRUGAL FATIGUE**
 
-**6.1. NON-PARAMETRIC EXPLORATORY PHASE**
+**6.1. Non-Parametric Exploratory Phase**
 
 ![image](https://github.com/user-attachments/assets/3064a7ba-7ba1-40a5-84a7-a020fe4869ef)
 
@@ -39,21 +39,27 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/52f4c186-d16a-41a6-801c-816b0aa8ab96)
 
-**6.2. IMPROVED MODELING PHASE**
+**6.2. Improved Modeling Phase**
 
 ![image](https://github.com/user-attachments/assets/c281efe1-bedd-4d31-80ae-f1121432c700)
 
 ![image](https://github.com/user-attachments/assets/a87a0d09-e767-4800-94e4-3a07b53af387)
 
-**6.3. IMPROVED ALERT SYSTEM**
+**6.3. Improved Alert System**
 
 ![image](https://github.com/user-attachments/assets/e3466e2e-afe2-4531-8252-d672007883fe)
 
-**6.4. VISUALIZATION OF RESULTS FOR INTERPRETATION**
+**6.4. Visualization of Results for Interpretation**
 
 ![image](https://github.com/user-attachments/assets/691edfb2-1154-4631-8e90-47ac72731af2)
 
 ![image](https://github.com/user-attachments/assets/e6eb2e8a-a251-4c6b-a5fb-dc245ea74c30)
+
+**7. ADVANCED VISUALIZATIONS FOR THE FRUGAL FATIGUE MODEL**
+
+**7.1. Relationships Between Variables**
+
+![image](https://github.com/user-attachments/assets/66002d42-2f25-4cb8-9b9d-77d5bb9e7590)
 
 
 
