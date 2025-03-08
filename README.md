@@ -29,6 +29,36 @@ Implementation with interpretation
 
 **5.3. IV3SLS**
 
+**Considerations on the Proposed IV3SLS Model** 
+
+**A) Structure of Equations:**
+
+  A.1) Each composite index (changes_expense, job_search, changes_consumption) is modelled as a function of its component variables and the exogenous variables.
+
+  A.2) The target variable (frugal_fatigue) is modelled as a function of the composite indices, which are treated as endogenous and instrumentalised with all exogenous and component variables.
+
+**B) Instrumentalisation:**
+
+  B.1) In the frugal_fatigue equation, the composite indices are treated as endogenous (enclosed in brackets).
+
+  B.2) All component and exogenous variables are used as instruments for these indices.
+
+**C) Prediction Function:**
+
+  C.1) The predict_with_iv3sls() function allows the application of the estimated model to new data.
+
+  C.2) It sequentially predicts the composite indices and then the target variable.
+
+  C.3) It includes the classification of fatigue levels using your original function.
+
+**D) Model Evaluation:**
+
+  D.1) A function is included to evaluate the model on test data.
+
+  D.2) It calculates common metrics such as MSE, RMSE, MAE, and R².
+
+This approach adequately captures the hierarchical structure of the model, where the sub-indices are first calculated and then used to predict frugal fatigue, considering the potential interdependencies between the variables.
+
 ![image](https://github.com/user-attachments/assets/4fd7e31a-5028-4763-b0eb-fd55f53c1329)
 
 ![image](https://github.com/user-attachments/assets/878d1105-148b-4779-a07b-9b6811724acc)
@@ -79,7 +109,6 @@ Implementation with interpretation
 ![image](https://github.com/user-attachments/assets/fdab3abe-56e0-4e55-9ca5-7e4c92a8b1d6)
 
 **7.2. Interpretation of the Model
-
 
 
 
