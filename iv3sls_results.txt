@@ -1,0 +1,57 @@
+                           System GLS Estimation Summary                           
+===================================================================================
+Estimator:                        GLS   Overall R-squared:                  -12.270
+No. Equations.:                     4   McElroy's R-squared:                       
+No. Observations:                1000   Judge's (OLS) R-squared:            -12.270
+Date:                Sat, Mar 08 2025   Berndt's R-squared:                  1.0000
+Time:                        17:27:37   Dhrymes's R-squared:                -12.270
+                                        Cov. Estimator:                      robust
+                                        Num. Constraints:                      None
+              Equation: changes_expense, Dependent Variable: changes_expense              
+==========================================================================================
+                        Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+------------------------------------------------------------------------------------------
+Intercept              -3.668e-12  2.499e-13    -14.676     0.0000  -4.158e-12  -3.178e-12
+discretionary_expenses     0.4000  6.333e-17  6.316e+15     0.0000      0.4000      0.4000
+basic_expenses             0.3000  1.701e-16  1.764e+15     0.0000      0.3000      0.3000
+frec_offers                0.3000   5.46e-14  5.495e+12     0.0000      0.3000      0.3000
+household_income        8.207e-16  6.341e-17     12.944     0.0000   6.965e-16    9.45e-16
+net_debt                8.607e-17    1.1e-17     7.8265     0.0000   6.451e-17   1.076e-16
+                 Equation: job_search, Dependent Variable: job_search                
+=====================================================================================
+                   Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+-------------------------------------------------------------------------------------
+Intercept          9.923e-14  5.507e-15     18.019     0.0000   8.844e-14     1.1e-13
+jobs_wanted           0.5000  2.908e-16  1.719e+15     0.0000      0.5000      0.5000
+lost_expectation      0.3000  1.149e-15   2.61e+14     0.0000      0.3000      0.3000
+jobs_lower_status     0.2000  1.103e-15  1.814e+14     0.0000      0.2000      0.2000
+household_income  -2.264e-17   1.44e-18    -15.718     0.0000  -2.546e-17  -1.981e-17
+net_debt          -2.392e-18  2.318e-19    -10.321     0.0000  -2.847e-18  -1.938e-18
+        Equation: changes_consumption, Dependent Variable: changes_consumption        
+======================================================================================
+                    Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------------
+Intercept            2.16e-14  1.218e-15     17.739     0.0000   1.921e-14   2.399e-14
+change_brands          0.4000  2.102e-16  1.903e+15     0.0000      0.4000      0.4000
+deferred_purchases     0.4000  1.676e-16  2.387e+15     0.0000      0.4000      0.4000
+change_preferences     0.2000  2.752e-16  7.268e+14     0.0000      0.2000      0.2000
+household_income   -6.437e-18    3.4e-19    -18.932     0.0000  -7.103e-18   -5.77e-18
+net_debt           -1.921e-19  4.856e-20    -3.9562     0.0001  -2.873e-19  -9.694e-20
+              Equation: frugal_fatigue, Dependent Variable: frugal_fatigue             
+=======================================================================================
+                     Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------------
+Intercept               1.4600     30.428     0.0480     0.9617     -58.177      61.097
+changes_expense        -3.1561     0.2048    -15.408     0.0000     -3.5575     -2.7546
+job_search              47.586     25.653     1.8550     0.0636     -2.6932      97.865
+changes_consumption    -401.86     70.554    -5.6958     0.0000     -540.14     -263.58
+========================================================================
+                              Instruments                               
+------------------------------------------------------------------------
+      discretionary_expenses, basic_expenses, frec_offers, jobs_wanted, 
+lost_expectation, jobs_lower_status, change_brands, deferred_purchases, 
+                          change_preferences, household_income, net_debt
+------------------------------------------------------------------------
+
+Covariance Estimator:
+Heteroskedastic (Robust) Covariance (Debiased: False, GLS: True)
