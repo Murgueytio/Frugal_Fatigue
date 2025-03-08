@@ -27,6 +27,19 @@ Implementation with interpretation
 
 ![image](https://github.com/user-attachments/assets/f62ee504-4dcb-491e-8379-cf0a0c71076d)
 
+**5.3. IV3SLS**
+
+![image](https://github.com/user-attachments/assets/4fd7e31a-5028-4763-b0eb-fd55f53c1329)
+
+![image](https://github.com/user-attachments/assets/878d1105-148b-4779-a07b-9b6811724acc)
+
+![image](https://github.com/user-attachments/assets/e3fe1a9b-6935-42d8-9b03-a510cd05c087)
+
+![image](https://github.com/user-attachments/assets/29fc1444-f5e0-4471-a094-cbc00217ff1a)
+
+
+
+
 **6. HYBRIDIZATION INDEX FRUGAL FATIGUE**
 
 **6.1. Non-Parametric Exploratory Phase**
